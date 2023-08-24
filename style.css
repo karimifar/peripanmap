@@ -1,0 +1,211 @@
+* {
+  font-family: "halyard-text", sans-serif;
+}
+#container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+#mapwrap {
+  position: relative;
+  width: 65%;
+  margin: auto;
+  height: 100vh;
+}
+#info {
+  left: 0;
+  height: 100%;
+  background: #d9e1e2e2;
+  box-shadow: #eee 0 0 10px;
+  padding: 20px;
+  width: 35%;
+  /* max-width: 500px; */
+  z-index: 2;
+  overflow: auto;
+}
+#map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#popup1 {
+  position: absolute;
+  z-index: 2;
+  width: 200px;
+  background: #eeeeeedd;
+  padding: 5px;
+  border-radius: 3px;
+  display: none;
+}
+#popup1 p {
+  margin-bottom: 0;
+}
+
+#popup1 p.inst-name {
+  font-size: 14px;
+  color: #000;
+  font-weight: 100;
+  /* text-shadow: #000 0px 0px 5px; */
+}
+#popup2 {
+  position: relative;
+  display: none;
+}
+#exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+#instructions p span {
+  font-weight: 700;
+  color: #fff;
+  background-color: #be3a34;
+  padding: 0px 6px 2px;
+  border-radius: 2px;
+}
+
+.general-info {
+  margin-top: 50px;
+}
+
+.general-info img {
+  width: 200px;
+}
+.general-info h2 {
+  font-family: "halyard-display", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #2f2951;
+}
+.general-info h2 a {
+  color: #0067b9;
+}
+.general-info p {
+  font-size: 20px;
+  color: #2f2951;
+  font-weight: 300;
+}
+#instructions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid #0067b9;
+  padding: 20px 10px;
+  background: #fff;
+  box-shadow: #eee 0 0 10px;
+}
+#instructions .instructions {
+  width: 100%;
+  font-size: 24px;
+  line-height: 1em;
+}
+#instructions .instructions span {
+  line-height: 1.9em;
+}
+.instructions p {
+  margin-bottom: 15px;
+}
+.inst-logo {
+  max-width: 250px;
+  max-height: 100px;
+  /* padding: 5px; */
+  margin-top: 30px;
+}
+.inst-logo img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+#logowrap {
+  /* position: absolute;
+    bottom:40px;
+    right: 10px; */
+  width: 220px;
+}
+#logowrap img {
+  width: 100%;
+}
+#zip-form {
+  margin-bottom: 20px;
+}
+#zip-form label {
+  /* display: block; */
+  width: 100%;
+}
+.input-group {
+  display: flex;
+}
+#zip-form input {
+  width: 70%;
+  padding: 5px;
+}
+#zip-form button {
+  background: #0067b9;
+  border: none;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .general-info {
+    margin-top: 25px;
+  }
+  #instructions .instructions {
+    font-size: 20px;
+  }
+  .general-info h2 {
+    font-size: 24px;
+  }
+  .general-info p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #container {
+    flex-wrap: wrap;
+  }
+  #mapwrap {
+    height: 70%;
+    width: 100%;
+  }
+  #info {
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    max-width: unset;
+    z-index: 2;
+  }
+  .general-info {
+    margin-top: 10px;
+  }
+  .general-info h2 {
+    font-size: 24px;
+  }
+  .general-info p {
+    font-size: 18px;
+  }
+  #instructions .instructions {
+    font-size: 18px;
+  }
+  .inst-logo {
+    max-width: 180px;
+    max-height: 75px;
+    margin-top: 10px;
+    /* padding: 5px; */
+  }
+  .inst-logo img {
+    max-width: 100%;
+    max-height: 75px;
+  }
+  #logowrap {
+    width: 150px;
+  }
+}
